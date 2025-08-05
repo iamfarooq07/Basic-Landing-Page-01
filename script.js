@@ -46,4 +46,20 @@ btn.addEventListener("click", () => {
         y: 30,
     });
 });
+const menuIcon = document.getElementById("menu-icon");
+const menu = document.querySelector('.menus');
+console.log(menu);
+
+
+menuIcon.addEventListener("click", () => {
+    if (menuIcon.classList.contains("ri-menu-3-line")) {
+        menuIcon.classList.remove("ri-menu-3-line");
+        menuIcon.classList.add("ri-close-line");
+        menu.style.display = 'block';
+    } else {
+        menuIcon.classList.remove("ri-close-line");
+        menuIcon.classList.add("ri-menu-3-line");
+    }
+});
+
 
